@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Math Quiz</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #ffeb3b;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FF5722;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #FFD700;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h4 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            background-color: #fff;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        .category img {
+            max-width: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .category div {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body class="bg-yellow-100 min-h-screen flex items-center justify-center">
+
+<div class="container">
+    <h4 class="title">Subtraction</h4>
+
+    <a href="subtraction/subtracting_tens_and_ones/index.html">
+        <div class="category">
+            <div>Subtracting Tens and Ones</div>
+        </div>
+    </a>
+
+    <a href="subtraction/subtracting_from_three_digit_numbers_without_regrouping/index.html">
+        <div class="category">
+            <div>Subtracting from 3 Digit Numbers without Regrouping</div>
+        </div>
+    </a>
+
+    <a href="subtraction/subtracting_tens_and_ones_with_regrouping/index.html">
+        <div class="category">
+            <div>Subtracting Tens and Ones with Regrouping</div>
+        </div>
+    </a>
+
+    <a href="subtraction/subtracting_from_three_digit_numbers_with_regrouping/index.html">
+        <div class="category">
+            <div>Subtracting from 3 Digit Numbers with Regrouping</div>
+        </div>
+    </a>
+
+    <a href="subtraction/subtracting_from_three_dig_numbers_with_regrouping_with_without_zero_diff/index.html">
+        <div class="category">
+            <div>Subtracting from 3 Digit Numbers with Regrouping, with or without Zero Difficulty</div>
+        </div>
+    </a>
+
+    <a href="subtraction/subtracting_money/index.html">
+        <div class="category">
+            <div>Subtracting Money</div>
+        </div>
+    </a>
+
+    <a href="subtraction/subtracting_mentally/index.html">
+        <div class="category">
+            <div>Subtracting Mentally</div>
+        </div>
+    </a>
+
+    <a href="subtraction/problem_solving_subtraction/index.html">
+        <div class="category">
+            <div>Problem Solving: Subtraction</div>
+        </div>
+    </a>
+
+    <button class="back-button" onclick="goBack()">Back</button>
+</div>
+
+</body>
+</html>

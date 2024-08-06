@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtracting from 3-digit Numbers without Regrouping</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Subtracting from 3-digit Numbers without Regrouping</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writing.png" alt="Subtraction Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Learn how to subtract from 3-digit numbers without regrouping.<br>
+            • Understand basic subtraction concepts.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Subtracting Numbers:<br>
+            <b>123 - 100</b>: 23<br>
+            <b>456 - 200</b>: 256<br>
+            <b>789 - 300</b>: 489<br>
+            <b>987 - 400</b>: 587<br>
+            <b>654 - 500</b>: 154
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Subtract:</h2>
+        </div>
+        <p class="section-content">
+            1. Line up the numbers by place value.<br>
+            2. Subtract the ones place.<br>
+            3. Subtract the tens place.<br>
+            4. Subtract the hundreds place.<br>
+            5. Write down the result.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="23">23</div>
+                <div class="draggable-item" draggable="true" id="256">256</div>
+                <div class="draggable-item" draggable="true" id="489">489</div>
+                <div class="draggable-item" draggable="true" id="587">587</div>
+                <div class="draggable-item" draggable="true" id="154">154</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="23">123 - 100 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="256">456 - 200 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="489">789 - 300 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="587">987 - 400 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="154">654 - 500 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

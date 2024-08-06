@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtracting Mentally</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Subtracting Mentally</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writing.png" alt="Mental Subtraction Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Learn how to subtract numbers mentally.<br>
+            • Improve mental math skills.<br>
+            • Practice mental subtraction with various problems.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Subtracting Simple Numbers:<br>
+            <b>50 - 25</b>: 25<br>
+            <b>100 - 45</b>: 55<br>
+            <b>200 - 123</b>: 77<br>
+            <b>75 - 33</b>: 42<br>
+            <b>90 - 67</b>: 23
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Subtract Mentally:</h2>
+        </div>
+        <p class="section-content">
+            1. Break the numbers into parts that are easier to subtract.<br>
+            2. Subtract the parts separately.<br>
+            3. Combine the results.<br>
+            4. Double-check your answer.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="25">25</div>
+                <div class="draggable-item" draggable="true" id="55">55</div>
+                <div class="draggable-item" draggable="true" id="77">77</div>
+                <div class="draggable-item" draggable="true" id="42">42</div>
+                <div class="draggable-item" draggable="true" id="23">23</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="25">50 - 25 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="55">100 - 45 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="77">200 - 123 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="42">75 - 33 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="23">90 - 67 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving: Subtraction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Problem Solving: Subtraction</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writing.png" alt="Subtraction Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Understand the concept of subtraction.<br>
+            • Learn how to solve subtraction problems step-by-step.<br>
+            • Practice solving subtraction problems.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Subtracting Single-Digit Numbers:<br>
+            <b>8 - 3</b>: 5<br>
+            <b>7 - 4</b>: 3<br>
+            2. Subtracting Double-Digit Numbers:<br>
+            <b>45 - 23</b>: 22<br>
+            <b>56 - 19</b>: 37<br>
+            3. Subtracting Triple-Digit Numbers:<br>
+            <b>234 - 123</b>: 111<br>
+            <b>578 - 256</b>: 322
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Solve Subtraction Problems:</h2>
+        </div>
+        <p class="section-content">
+            1. Write down the numbers, aligning the digits by place value.<br>
+            2. Subtract the digits starting from the rightmost column.<br>
+            3. If necessary, regroup by borrowing from the next column.<br>
+            4. Write the difference below the line.<br>
+            5. Check your work to ensure accuracy.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="5">5</div>
+                <div class="draggable-item" draggable="true" id="3">3</div>
+                <div class="draggable-item" draggable="true" id="22">22</div>
+                <div class="draggable-item" draggable="true" id="37">37</div>
+                <div class="draggable-item" draggable="true" id="111">111</div>
+                <div class="draggable-item" draggable="true" id="322">322</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="5">8 - 3 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="3">7 - 4 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="22">45 - 23 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="37">56 - 19 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="111">234 - 123 = </div>
+            <div class="dropzone" id="dropzone6" data-answer="322">578 - 256 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

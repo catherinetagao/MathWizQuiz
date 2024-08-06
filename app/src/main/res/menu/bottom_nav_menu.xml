@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_learn"
+        android:title="@string/learn"
+        android:icon="@drawable/ic_learn"
+        app:iconTint="@null"/>
+    <item
+        android:id="@+id/menu_activities"
+        android:title="@string/activities"
+        android:icon="@drawable/ic_activity"
+        app:iconTint="@null"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_user"
+        app:iconTint="@null"
+        />
+</menu>

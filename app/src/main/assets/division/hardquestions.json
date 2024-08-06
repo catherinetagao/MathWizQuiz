@@ -1,0 +1,64 @@
+{
+  "hardquestions": [
+    {
+      "question": "What is 36 ÷ 6?",
+      "answer1": "6",
+      "answer2": "7",
+      "correct": "6"
+    },
+    {
+      "question": "What is 56 ÷ 8?",
+      "answer1": "7",
+      "answer2": "8",
+      "correct": "7"
+    },
+    {
+      "question": "What is 45 ÷ 5?",
+      "answer1": "9",
+      "answer2": "10",
+      "correct": "9"
+    },
+    {
+      "question": "What is 63 ÷ 7?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "9"
+    },
+    {
+      "question": "What is 48 ÷ 8?",
+      "answer1": "6",
+      "answer2": "7",
+      "correct": "6"
+    },
+    {
+      "question": "What is 72 ÷ 9?",
+      "answer1": "8",
+      "answer2": "9",
+      "correct": "8"
+    },
+    {
+      "question": "What is 81 ÷ 9?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "9"
+    },
+    {
+      "question": "What is 90 ÷ 10?",
+      "answer1": "9",
+      "answer2": "10",
+      "correct": "9"
+    },
+    {
+      "question": "What is 54 ÷ 6?",
+      "answer1": "8",
+      "answer2": "9",
+      "correct": "9"
+    },
+    {
+      "question": "What is 40 ÷ 5?",
+      "answer1": "8",
+      "answer2": "7",
+      "correct": "8"
+    }
+  ]
+}

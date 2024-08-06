@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Facts for 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Multiplication Facts for 4</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writingx.png" alt="Objectives Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Understand the concept of multiplication by 4.<br>
+            • Learn and memorize the multiplication facts for 4.<br>
+            • Practice solving multiplication problems involving the number 4.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. 4 x 1 = 4<br>
+            2. 4 x 2 = 8<br>
+            3. 4 x 3 = 12<br>
+            4. 4 x 4 = 16<br>
+            5. 4 x 5 = 20<br>
+            6. 4 x 6 = 24<br>
+            7. 4 x 7 = 28<br>
+            8. 4 x 8 = 32<br>
+            9. 4 x 9 = 36<br>
+            10. 4 x 10 = 40
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Learn Multiplication by 4:</h2>
+        </div>
+        <p class="section-content">
+            1. Understand that multiplying by 4 is the same as adding a number four times.<br>
+            2. Memorize the basic multiplication facts for 4 (4 x 1 through 4 x 10).<br>
+            3. Use repetition and practice to reinforce your memory.<br>
+            4. Apply the facts in real-life situations to better understand their use.<br>
+            5. Practice with interactive problems to test your knowledge.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="4">4</div>
+                <div class="draggable-item" draggable="true" id="8">8</div>
+                <div class="draggable-item" draggable="true" id="12">12</div>
+                <div class="draggable-item" draggable="true" id="16">16</div>
+                <div class="draggable-item" draggable="true" id="20">20</div>
+                <div class="draggable-item" draggable="true" id="24">24</div>
+                <div class="draggable-item" draggable="true" id="28">28</div>
+                <div class="draggable-item" draggable="true" id="32">32</div>
+                <div class="draggable-item" draggable="true" id="36">36</div>
+                <div class="draggable-item" draggable="true" id="40">40</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="4">4 x 1 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="8">4 x 2 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="12">4 x 3 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="16">4 x 4 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="20">4 x 5 = </div>
+            <div class="dropzone" id="dropzone6" data-answer="24">4 x 6 = </div>
+            <div class="dropzone" id="dropzone7" data-answer="28">4 x 7 = </div>
+            <div class="dropzone" id="dropzone8" data-answer="32">4 x 8 = </div>
+            <div class="dropzone" id="dropzone9" data-answer="36">4 x 9 = </div>
+            <div class="dropzone" id="dropzone10" data-answer="40">4 x 10 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

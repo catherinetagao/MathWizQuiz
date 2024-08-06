@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving: Addition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Problem Solving: Addition</h1>
+
+        <div class="section">
+            <img src="icons/icon_addition.png" alt="Addition Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Develop problem-solving skills using addition.<br>
+            • Learn strategies for solving addition problems.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Solve the following problems:<br>
+            <b>Jane has 24 apples, and she buys 30 more. How many apples does she have now?</b>: 54<br>
+            <b>Tom has 45 marbles, and he finds 25 more. How many marbles does he have now?</b>: 70<br>
+            <b>A bakery sold 60 cakes in the morning and 20 more in the afternoon. How many cakes were sold in total?</b>: 80<br>
+            <b>Sara has 33 books, and she receives 44 more as gifts. How many books does she have now?</b>: 77<br>
+            <b>Mike saved 52 dollars and earned 38 more. How much money does he have now?</b>: 90
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="54">54</div>
+                <div class="draggable-item" draggable="true" id="70">70</div>
+                <div class="draggable-item" draggable="true" id="80">80</div>
+                <div class="draggable-item" draggable="true" id="77">77</div>
+                <div class="draggable-item" draggable="true" id="90">90</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="54">Jane has 24 apples, and she buys 30 more. How many apples does she have now? = </div>
+            <div class="dropzone" id="dropzone2" data-answer="70">Tom has 45 marbles, and he finds 25 more. How many marbles does he have now? = </div>
+            <div class="dropzone" id="dropzone3" data-answer="80">A bakery sold 60 cakes in the morning and 20 more in the afternoon. How many cakes were sold in total? = </div>
+            <div class="dropzone" id="dropzone4" data-answer="77">Sara has 33 books, and she receives 44 more as gifts. How many books does she have now? = </div>
+            <div class="dropzone" id="dropzone5" data-answer="90">Mike saved 52 pesos and earned 38 more. How much money does he have now? = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

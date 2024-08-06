@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game for Kids</title>
+    <style>
+        body {
+           font-family: 'Comic Sans MS', 'Comic Sans';
+           background-image: url('https://media.giphy.com/media/g3bKgbTctP1kI/giphy.gif'); /* Replace with your GIF URL */
+           background-size: cover; /* Make the background cover the entire area */
+           background-position: center; /* Center the background */
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+           margin: 0;
+           padding: 20px;
+       }
+
+       h1 {
+           color: #ff4500;
+           font-size: 4em;
+           margin-bottom: 20px;
+           text-shadow: 2px 2px #ff6347;
+           text-align: center;
+       }
+
+       p {
+           font-size: 2em;
+           margin: 10px 0;
+           color: #333;
+           text-align: center;
+       }
+
+       #problem {
+           font-size: 4em;
+           color: #1e90ff;
+           margin-bottom: 20px;
+           background-color: #fffacd;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           text-align: center;
+       }
+
+       .answer-button {
+           padding: 20px 30px;
+           font-size: 2em;
+           background-color: #32cd32;
+           color: white;
+           border: none;
+           border-radius: 10px;
+           cursor: pointer;
+           margin: 10px;
+           transition: background-color 0.3s, transform 0.3s;
+       }
+
+       .answer-button:hover {
+           background-color: #228b22;
+           transform: scale(1.1);
+       }
+
+       #nextQuestion {
+           padding: 20px 30px;
+           font-size: 2em;
+           background-color: #ffa500;
+           color: white;
+           border: none;
+           border-radius: 10px;
+           cursor: pointer;
+           margin: 20px 0;
+           transition: background-color 0.3s, transform 0.3s;
+           display: none;
+       }
+
+       #nextQuestion:hover {
+           background-color: #ff8c00;
+           transform: scale(1.1);
+       }
+
+       #result {
+           font-size: 2em;
+           margin-top: 20px;
+           text-align: center;
+       }
+
+       .correct {
+           color: #32cd32;
+       }
+
+       .incorrect {
+           color: #ff4500;
+       }
+
+       @media (max-width: 600px) {
+           h1 {
+               font-size: 3em;
+           }
+           p {
+               font-size: 1.5em;
+           }
+           #problem {
+               font-size: 2.5em;
+               padding: 10px 20px;
+           }
+           .answer-button {
+               font-size: 1.5em;
+               padding: 15px 20px;
+           }
+           #result {
+               font-size: 1.5em;
+           }
+       }
+    </style>
+</head>
+<body>
+<h1>Math Game for Kids</h1>
+<p>Click the correct answer:</p>
+<div id="problem"></div>
+<div id="answer-buttons" class="answer-buttons">
+    <button class="answer-button" onclick="checkAnswer(this)"></button>
+    <button class="answer-button" onclick="checkAnswer(this)"></button>
+</div>
+<button id="nextQuestion" style="display:none;" onclick="generateProblem()">Next Question</button>
+<p id="result"></p>
+
+<script>
+    let correctAnswer;
+
+    const generateProblem = () => {
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+
+        // Randomly choose an operation
+        const operations = ['+', '-', '*', '/'];
+        const operation = operations[Math.floor(Math.random() * operations.length)];
+
+        // Calculate the correct answer based on the operation
+        switch (operation) {
+            case '+':
+                correctAnswer = num1 + num2;
+                document.getElementById('problem').textContent = `${num1} + ${num2} = ?`;
+                break;
+            case '-':
+                correctAnswer = num1 - num2;
+                document.getElementById('problem').textContent = `${num1} - ${num2} = ?`;
+                break;
+            case '*':
+                correctAnswer = num1 * num2;
+                document.getElementById('problem').textContent = `${num1} * ${num2} = ?`;
+                break;
+            case '/':
+                // Ensure division gives an integer answer
+                correctAnswer = num1 * num2; // num1 is made a multiple of num2
+                num1 = correctAnswer; // Set num1 as multiple for easy division
+                document.getElementById('problem').textContent = `${num1} / ${num2} = ?`;
+                break;
+        }
+
+        document.getElementById('result').textContent = '';
+
+        // Generate options
+        const answers = [correctAnswer];
+        while (answers.length < 2) {
+            const wrongAnswer = Math.floor(Math.random() * 19) + 1;
+            if (!answers.includes(wrongAnswer)) {
+                answers.push(wrongAnswer);
+            }
+        }
+
+        // Shuffle options
+        answers.sort(() => Math.random() - 0.5);
+
+        const buttons = document.querySelectorAll('.answer-button');
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].textContent = answers[i];
+        }
+
+        document.getElementById('nextQuestion').style.display = 'none';
+    };
+
+    const checkAnswer = (button) => {
+        const userAnswer = parseInt(button.textContent);
+        const resultText = document.getElementById('result');
+
+        if (userAnswer === correctAnswer) {
+            resultText.textContent = "Correct! 🎉";
+            resultText.className = 'correct';
+            document.getElementById('nextQuestion').style.display = 'inline-block';
+        } else {
+            resultText.textContent = "Incorrect. Try again!";
+            resultText.className = 'incorrect';
+        }
+    };
+
+    // Start the game with the first problem
+    generateProblem();
+</script>
+</body>
+</html>

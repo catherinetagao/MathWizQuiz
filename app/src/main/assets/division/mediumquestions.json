@@ -1,0 +1,64 @@
+{
+  "mediumquestions": [
+    {
+      "question": "What is 24 ÷ 3?",
+      "answer1": "8",
+      "answer2": "7",
+      "correct": "8"
+    },
+    {
+      "question": "What is 36 ÷ 4?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "9"
+    },
+    {
+      "question": "What is 42 ÷ 6?",
+      "answer1": "7",
+      "answer2": "8",
+      "correct": "7"
+    },
+    {
+      "question": "What is 30 ÷ 5?",
+      "answer1": "6",
+      "answer2": "7",
+      "correct": "6"
+    },
+    {
+      "question": "What is 28 ÷ 4?",
+      "answer1": "6",
+      "answer2": "7",
+      "correct": "7"
+    },
+    {
+      "question": "What is 18 ÷ 3?",
+      "answer1": "6",
+      "answer2": "7",
+      "correct": "6"
+    },
+    {
+      "question": "What is 32 ÷ 8?",
+      "answer1": "4",
+      "answer2": "5",
+      "correct": "4"
+    },
+    {
+      "question": "What is 45 ÷ 9?",
+      "answer1": "5",
+      "answer2": "6",
+      "correct": "5"
+    },
+    {
+      "question": "What is 48 ÷ 6?",
+      "answer1": "8",
+      "answer2": "7",
+      "correct": "8"
+    },
+    {
+      "question": "What is 56 ÷ 7?",
+      "answer1": "8",
+      "answer2": "9",
+      "correct": "8"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Facts for 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Multiplication Facts for 3</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writing.png" alt="Objectives Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Understand the concept of multiplication by 3.<br>
+            • Learn and memorize the multiplication facts for 3.<br>
+            • Practice solving multiplication problems involving the number 3.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. 3 x 1 = 3<br>
+            2. 3 x 2 = 6<br>
+            3. 3 x 3 = 9<br>
+            4. 3 x 4 = 12<br>
+            5. 3 x 5 = 15<br>
+            6. 3 x 6 = 18<br>
+            7. 3 x 7 = 21<br>
+            8. 3 x 8 = 24<br>
+            9. 3 x 9 = 27<br>
+            10. 3 x 10 = 30
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Learn Multiplication by 3:</h2>
+        </div>
+        <p class="section-content">
+            1. Understand that multiplying by 3 is the same as adding a number three times.<br>
+            2. Memorize the basic multiplication facts for 3 (3 x 1 through 3 x 10).<br>
+            3. Use repetition and practice to reinforce your memory.<br>
+            4. Apply the facts in real-life situations to better understand their use.<br>
+            5. Practice with interactive problems to test your knowledge.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="3">3</div>
+                <div class="draggable-item" draggable="true" id="6">6</div>
+                <div class="draggable-item" draggable="true" id="9">9</div>
+                <div class="draggable-item" draggable="true" id="12">12</div>
+                <div class="draggable-item" draggable="true" id="15">15</div>
+                <div class="draggable-item" draggable="true" id="18">18</div>
+                <div class="draggable-item" draggable="true" id="21">21</div>
+                <div class="draggable-item" draggable="true" id="24">24</div>
+                <div class="draggable-item" draggable="true" id="27">27</div>
+                <div class="draggable-item" draggable="true" id="30">30</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="3">3 x 1 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="6">3 x 2 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="9">3 x 3 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="12">3 x 4 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="15">3 x 5 = </div>
+            <div class="dropzone" id="dropzone6" data-answer="18">3 x 6 = </div>
+            <div class="dropzone" id="dropzone7" data-answer="21">3 x 7 = </div>
+            <div class="dropzone" id="dropzone8" data-answer="24">3 x 8 = </div>
+            <div class="dropzone" id="dropzone9" data-answer="27">3 x 9 = </div>
+            <div class="dropzone" id="dropzone10" data-answer="30">3 x 10 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

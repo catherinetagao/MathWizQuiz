@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MultiplicationContentActivity">
+
+    <!-- Title -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/title"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:titleCentered="true"
+            app:title="Multiplication"
+            app:titleTextColor="@color/text_color"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!-- Objectives -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/objectives"
+                android:textSize="20dp"
+                android:textColor="@color/text_secondary_color"
+                android:layout_width="match_parent"
+                android:text="Objectives:\n- Understand multiplication\n- Solve multiplication problems"
+                android:layout_height="match_parent"
+                android:padding="25dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- Examples -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/examples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Examples:\n- 5 x 4 = 20\n- 7 x 3 = 21"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Practice Problem -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/practice_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Practice Problem:\n- What is 8 x 6?"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <!-- Add EditText for user input -->
+            <EditText
+                android:id="@+id/user_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your answer"
+                android:inputType="number"/>
+
+            <!-- Add Button to submit answer -->
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:text="Submit"/>
+            </LinearLayout>
+
+    </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <!-- TextView for feedback -->
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/completion_rate_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completion Rate: 0%"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/areas_of_improvement_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Areas of Improvement:"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

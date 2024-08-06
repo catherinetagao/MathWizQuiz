@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 2 Math Lesson: Addition with Regrouping and Grouping</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎉 Grade 2 Math Fun 🎉</h1>
+        <h2>Addition Adventure!</h2>
+    </header>
+    <main>
+        <section>
+            <h3>🚀 Addition with Regrouping 🚀</h3>
+            <p>When we add numbers and the sum of one column is more than 9, we need to regroup or carry over the extra digit.</p>
+            <p>For example, 7 + 6 = 13. We write down 3 in the ones place and carry over 1 to the tens place.</p>
+            <p>Let's see some examples:</p>
+            <ul>
+                <li>7 + 6 = <input type="number" id="addRegrouping1" class="input-field"></li>
+                <li>8 + 9 = <input type="number" id="addRegrouping2" class="input-field"></li>
+                <li>15 + 8 = <input type="number" id="addRegrouping3" class="input-field"></li>
+            </ul>
+            <button onclick="checkAddRegrouping()" class="btn">Check Answers</button>
+            <p id="addRegroupingResult"></p>
+        </section>
+        <section>
+            <h3>🌟 Addition with Grouping 🌟</h3>
+            <p>Grouping helps us add larger numbers by breaking them into easier-to-manage groups.</p>
+            <p>For example, instead of adding 27 + 15 directly, we can group them as (20 + 10) + (7 + 5), making it simpler to add.</p>
+            <p>Let's practice with some examples:</p>
+            <ul>
+                <li>27 + 15 = <input type="number" id="addGrouping1" class="input-field"></li>
+                <li>38 + 24 = <input type="number" id="addGrouping2" class="input-field"></li>
+                <li>49 + 36 = <input type="number" id="addGrouping3" class="input-field"></li>
+            </ul>
+            <button onclick="checkAddGrouping()" class="btn">Check Answers</button>
+            <p id="addGroupingResult"></p>
+        </section>
+    </main>
+    <footer>
+        <p>🌈 Practice what you've learned with these addition problems. Remember to regroup or group when necessary! 🌈</p>
+    </footer>
+    <audio id="bg-music" autoplay loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

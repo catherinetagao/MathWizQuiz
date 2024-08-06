@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtracting Money in Pesos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Subtracting Money in Pesos</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writing.png" alt="Money Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+
+        <p class="section-content">
+            • Learn how to subtract money values in pesos.<br>
+            • Understand the importance of aligning decimal points when subtracting.<br>
+            • Practice subtracting different amounts of money.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Subtracting Money Values:<br>
+            <b>₱575.00 - ₱250.00</b>: ₱325.00<br>
+            <b>₱1000.00 - ₱475.00</b>: ₱525.00<br>
+            <b>₱2000.00 - ₱1535.00</b>: ₱465.00<br>
+            <b>₱5050.00 - ₱2525.00</b>: ₱2525.00<br>
+            <b>₱10000.00 - ₱6540.00</b>: ₱3460.00
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Subtract:</h2>
+        </div>
+        <p class="section-content">
+            1. Write down the money amounts, aligning the decimal points.<br>
+            2. If the cents in the subtrahend are larger than in the minuend, borrow from the pesos.<br>
+            3. Subtract the cents.<br>
+            4. Subtract the pesos.<br>
+            5. Write down the result.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="325.00">₱325.00</div>
+                <div class="draggable-item" draggable="true" id="525.00">₱525.00</div>
+                <div class="draggable-item" draggable="true" id="465.00">₱465.00</div>
+                <div class="draggable-item" draggable="true" id="2525.00">₱2525.00</div>
+                <div class="draggable-item" draggable="true" id="3460.00">₱3460.00</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="325.00">₱575.00 - ₱250.00 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="525.00">₱1000.00 - ₱475.00 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="465.00">₱2000.00 - ₱1535.00 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="2525.00">₱5050.00 - ₱2525.00 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="3460.00">₱10000.00 - ₱6540.00 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

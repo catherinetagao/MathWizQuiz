@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MathLearningApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MultiplicationContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DivideHardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".DivideClassicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".DivideBasicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplyHardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplyClassicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplyBasicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".SubtractionHardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".SubtactionClassicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".SubtractionBasicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplicationQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubtractionQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ClassicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BasicQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".DivideQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplyQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubtractQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnterName"
+            android:exported="false" />
+        <activity
+            android:name=".NumbersThrough500"
+            android:exported="false" />
+        <activity
+            android:name=".ReadWriteNumber"
+            android:exported="false" />
+        <activity
+            android:name=".GamePage"
+            android:exported="false" />
+        <activity
+            android:name=".QuizPage"
+            android:exported="false" />
+        <activity
+            android:name=".DivisionLearningPage"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplyLearningPage"
+            android:exported="false" />
+        <activity
+            android:name=".SubLearningPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddLearningPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Viewer"
+            android:exported="false" />
+        <activity
+            android:name=".ReportPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".BackgroundMusicService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="customGreen">#00FF00</color> <!-- Example valid color -->
+    <color name="textIndigo">#4F46E5</color>
+    <color name="bgIndigo">#EEF2FF</color>
+    <color name="activeBgIndigo">#C7D2FE</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="green2">#FF7AA87A</color>
+    <color name="black">#FF000000</color>
+
+    <color name="correctColor">#4CAF50</color>
+    <color name="incorrectColor">#F44336</color>
+    <color name="defaultButtonColor">#50FFFFFF</color>
+    <color name="lavander">#D82BFF</color>
+
+    <color name="gray">#F4F4F4</color>
+    <color name="orange">#FF8F00</color>
+    <color name="blue">#1565C0</color>
+
+    <color name="green">#79AB78</color>
+
+    <color name="green1">#37cb95</color>
+    <color name="red1">#de3c63</color>
+
+    <color name="background">#f2f0f4</color>
+    <color name="card_background">#ffffff</color>
+    <color name="text_color">#1b1b1b</color>
+    <color name="text_secondary_color">#666666</color>
+    <color name="text_background">#44464e</color>
+
+</resources>

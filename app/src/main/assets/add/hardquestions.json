@@ -1,0 +1,64 @@
+{
+  "hardquestions": [
+    {
+      "question": "What is 123 + 456?",
+      "answer1": "578",
+      "answer2": "579",
+      "correct": "579"
+    },
+    {
+      "question": "What is 234 + 345?",
+      "answer1": "578",
+      "answer2": "579",
+      "correct": "579"
+    },
+    {
+      "question": "What is 567 + 678?",
+      "answer1": "1234",
+      "answer2": "1245",
+      "correct": "1245"
+    },
+    {
+      "question": "What is 789 + 123?",
+      "answer1": "912",
+      "answer2": "913",
+      "correct": "912"
+    },
+    {
+      "question": "What is 345 + 654?",
+      "answer1": "999",
+      "answer2": "1000",
+      "correct": "999"
+    },
+    {
+      "question": "What is 876 + 543?",
+      "answer1": "1418",
+      "answer2": "1419",
+      "correct": "1419"
+    },
+    {
+      "question": "What is 432 + 567?",
+      "answer1": "997",
+      "answer2": "998",
+      "correct": "999"
+    },
+    {
+      "question": "What is 321 + 234?",
+      "answer1": "554",
+      "answer2": "555",
+      "correct": "555"
+    },
+    {
+      "question": "What is 654 + 789?",
+      "answer1": "1443",
+      "answer2": "1444",
+      "correct": "1443"
+    },
+    {
+      "question": "What is 987 + 123?",
+      "answer1": "1109",
+      "answer2": "1110",
+      "correct": "1110"
+    }
+  ]
+}

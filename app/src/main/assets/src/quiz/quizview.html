@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Math Quiz</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/tailwind.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            background-color: #e0f7fa; /* Light blue background */
+        }
+
+        #quiz-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            background-color: #fffacd; /* Light yellow background */
+            border: 5px solid #ffd700; /* Gold border */
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #question {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ff6347; /* Tomato red */
+        }
+
+        #options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #32cd32; /* Lime green */
+            color: white;
+            box-shadow: 0 5px #228b22;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3cb371; /* Medium sea green */
+        }
+
+        button:active {
+            box-shadow: 0 2px #228b22;
+            transform: translateY(2px);
+        }
+
+        #result-container {
+            display: none;
+            margin-top: 50px;
+            background-color: #fffacd; /* Light yellow background */
+            border: 5px solid #ffd700; /* Gold border */
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #score {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff6347; /* Tomato red */
+        }
+
+        #timer {
+            font-size: 28px;
+            color: #ff6347; /* Tomato red */
+        }
+
+        #next-btn {
+            background-color: #4682b4; /* Steel blue */
+        }
+
+        #next-btn:hover {
+            background-color: #5f9ea0; /* Cadet blue */
+        }
+
+        #restart-btn {
+            background-color: #ff4500; /* Orange red */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #restart-btn:hover {
+            background-color: #ff6347; /* Tomato red */
+        }
+    </style>
+</head>
+
+<body class="bg-blue-100 min-h-screen flex items-center justify-center">
+
+<div id="quiz-container" class="bg-white shadow-md rounded-md p-8 max-w-lg w-full">
+    <p id="timer"></p>
+    <div id="question" class="text-lg font-bold mb-4"></div>
+    <div id="options" class="space-y-2"></div>
+    <button id="next-btn" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400">
+        Next
+    </button>
+</div>
+
+<div id="result-container" style="display: none;">
+    <p id="score"></p>
+    <img id="bronze-medal" src="bronze-medal.png" style="display: none;" alt="Bronze Medal">
+    <img id="silver-medal" src="silver-medal.png" style="display: none;" alt="Silver Medal">
+    <img id="gold-medal" src="gold-medal.png" style="display: none;" alt="Gold Medal">
+    <button id="restart-btn">Restart</button>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

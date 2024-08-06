@@ -1,0 +1,64 @@
+{
+  "easyquestions": [
+    {
+      "question": "What is 8 - 3?",
+      "answer1": "4",
+      "answer2": "5",
+      "correct": "5"
+    },
+    {
+      "question": "What is 12 - 4?",
+      "answer1": "8",
+      "answer2": "7",
+      "correct": "8"
+    },
+    {
+      "question": "What is 7 - 2?",
+      "answer1": "5",
+      "answer2": "4",
+      "correct": "5"
+    },
+    {
+      "question": "What is 15 - 5?",
+      "answer1": "11",
+      "answer2": "10",
+      "correct": "10"
+    },
+    {
+      "question": "What is 9 - 6?",
+      "answer1": "3",
+      "answer2": "2",
+      "correct": "3"
+    },
+    {
+      "question": "What is 14 - 7?",
+      "answer1": "6",
+      "answer2": "7",
+      "correct": "7"
+    },
+    {
+      "question": "What is 10 - 1?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "9"
+    },
+    {
+      "question": "What is 6 - 4?",
+      "answer1": "1",
+      "answer2": "2",
+      "correct": "2"
+    },
+    {
+      "question": "What is 13 - 8?",
+      "answer1": "5",
+      "answer2": "6",
+      "correct": "5"
+    },
+    {
+      "question": "What is 11 - 3?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "8"
+    }
+  ]
+}

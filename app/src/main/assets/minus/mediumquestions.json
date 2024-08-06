@@ -1,0 +1,64 @@
+{
+  "mediumlevelquestions": [
+    {
+      "question": "What is 18 - 9?",
+      "answer1": "8",
+      "answer2": "9",
+      "correct": "9"
+    },
+    {
+      "question": "What is 21 - 13?",
+      "answer1": "7",
+      "answer2": "8",
+      "correct": "8"
+    },
+    {
+      "question": "What is 30 - 17?",
+      "answer1": "12",
+      "answer2": "13",
+      "correct": "13"
+    },
+    {
+      "question": "What is 25 - 14?",
+      "answer1": "10",
+      "answer2": "11",
+      "correct": "11"
+    },
+    {
+      "question": "What is 32 - 19?",
+      "answer1": "12",
+      "answer2": "13",
+      "correct": "13"
+    },
+    {
+      "question": "What is 40 - 22?",
+      "answer1": "16",
+      "answer2": "18",
+      "correct": "18"
+    },
+    {
+      "question": "What is 27 - 15?",
+      "answer1": "11",
+      "answer2": "12",
+      "correct": "12"
+    },
+    {
+      "question": "What is 35 - 20?",
+      "answer1": "14",
+      "answer2": "15",
+      "correct": "15"
+    },
+    {
+      "question": "What is 29 - 11?",
+      "answer1": "17",
+      "answer2": "18",
+      "correct": "18"
+    },
+    {
+      "question": "What is 24 - 16?",
+      "answer1": "7",
+      "answer2": "8",
+      "correct": "8"
+    }
+  ]
+}

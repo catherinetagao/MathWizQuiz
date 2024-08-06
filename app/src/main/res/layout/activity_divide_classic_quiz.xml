@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".DivideClassicQuiz">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:elevation="0dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:titleCentered="true"
+            app:title="Quiz"
+            app:titleTextColor="@color/text_color"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Progress bar for quiz progress -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:max="100"
+        android:progress="0"
+        android:background="@color/green"
+        android:indeterminate="false"/>
+
+    <!-- Timer for countdown -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="Time Left: 60s"
+        android:paddingTop="8dp"
+        android:textColor="@color/text_secondary_color"/>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/quizText"
+                android:gravity="center"
+                android:textColor="@color/text_secondary_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="25dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aanswer"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="25dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/TestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/banswer"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="25dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

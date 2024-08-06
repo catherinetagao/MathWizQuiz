@@ -1,0 +1,64 @@
+{
+  "mediumquestions":[
+    {
+      "question": "What is 6 × 4?",
+      "answer1": "24",
+      "answer2": "20",
+      "correct": "24"
+    },
+    {
+      "question": "What is 5 × 3?",
+      "answer1": "15",
+      "answer2": "12",
+      "correct": "15"
+    },
+    {
+      "question": "What is 7 × 5?",
+      "answer1": "35",
+      "answer2": "30",
+      "correct": "35"
+    },
+    {
+      "question": "What is 8 × 3?",
+      "answer1": "24",
+      "answer2": "21",
+      "correct": "24"
+    },
+    {
+      "question": "What is 4 × 7?",
+      "answer1": "28",
+      "answer2": "32",
+      "correct": "28"
+    },
+    {
+      "question": "What is 9 × 2?",
+      "answer1": "18",
+      "answer2": "20",
+      "correct": "18"
+    },
+    {
+      "question": "What is 3 × 6?",
+      "answer1": "18",
+      "answer2": "20",
+      "correct": "18"
+    },
+    {
+      "question": "What is 5 × 4?",
+      "answer1": "20",
+      "answer2": "22",
+      "correct": "20"
+    },
+    {
+      "question": "What is 7 × 3?",
+      "answer1": "21",
+      "answer2": "24",
+      "correct": "21"
+    },
+    {
+      "question": "What is 6 × 5?",
+      "answer1": "30",
+      "answer2": "35",
+      "correct": "30"
+    }
+  ]
+}

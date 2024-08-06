@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Facts for 7 and 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Multiplication Facts for 7 and 8</h1>
+
+        <div class="section">
+            <img src="icons/icon_reading_writing.png" alt="Objectives Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Understand the concept of multiplication by 7 and 8.<br>
+            • Learn and memorize the multiplication facts for 7 and 8.<br>
+            • Practice solving multiplication problems involving the numbers 7 and 8.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            <strong>Multiplication Facts for 7:</strong><br>
+            1. 7 x 1 = 7<br>
+            2. 7 x 2 = 14<br>
+            3. 7 x 3 = 21<br>
+            4. 7 x 4 = 28<br>
+            5. 7 x 5 = 35<br>
+            6. 7 x 6 = 42<br>
+            7. 7 x 7 = 49<br>
+            8. 7 x 8 = 56<br>
+            9. 7 x 9 = 63<br>
+            10. 7 x 10 = 70<br><br>
+
+            <strong>Multiplication Facts for 8:</strong><br>
+            1. 8 x 1 = 8<br>
+            2. 8 x 2 = 16<br>
+            3. 8 x 3 = 24<br>
+            4. 8 x 4 = 32<br>
+            5. 8 x 5 = 40<br>
+            6. 8 x 6 = 48<br>
+            7. 8 x 7 = 56<br>
+            8. 8 x 8 = 64<br>
+            9. 8 x 9 = 72<br>
+            10. 8 x 10 = 80
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_steps.png" alt="Steps Icon" class="icon">
+            <h2 class="section-title">Steps to Learn Multiplication by 7 and 8:</h2>
+        </div>
+        <p class="section-content">
+            1. Understand that multiplying by 7 is the same as adding a number seven times and multiplying by 8 is the same as adding a number eight times.<br>
+            2. Memorize the basic multiplication facts for 7 and 8 (7 x 1 through 7 x 10 and 8 x 1 through 8 x 10).<br>
+            3. Use repetition and practice to reinforce your memory.<br>
+            4. Apply the facts in real-life situations to better understand their use.<br>
+            5. Practice with interactive problems to test your knowledge.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="7">7</div>
+                <div class="draggable-item" draggable="true" id="14">14</div>
+                <div class="draggable-item" draggable="true" id="21">21</div>
+                <div class="draggable-item" draggable="true" id="28">28</div>
+                <div class="draggable-item" draggable="true" id="35">35</div>
+                <div class="draggable-item" draggable="true" id="42">42</div>
+                <div class="draggable-item" draggable="true" id="49">49</div>
+                <div class="draggable-item" draggable="true" id="56">56</div>
+                <div class="draggable-item" draggable="true" id="63">63</div>
+                <div class="draggable-item" draggable="true" id="70">70</div>
+                <div class="draggable-item" draggable="true" id="8">8</div>
+                <div class="draggable-item" draggable="true" id="16">16</div>
+                <div class="draggable-item" draggable="true" id="24">24</div>
+                <div class="draggable-item" draggable="true" id="32">32</div>
+                <div class="draggable-item" draggable="true" id="40">40</div>
+                <div class="draggable-item" draggable="true" id="48">48</div>
+                <div class="draggable-item" draggable="true" id="56-8">56</div>
+                <div class="draggable-item" draggable="true" id="64">64</div>
+                <div class="draggable-item" draggable="true" id="72">72</div>
+                <div class="draggable-item" draggable="true" id="80">80</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="7">7 x 1 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="14">7 x 2 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="21">7 x 3 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="28">7 x 4 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="35">7 x 5 = </div>
+            <div class="dropzone" id="dropzone6" data-answer="42">7 x 6 = </div>
+            <div class="dropzone" id="dropzone7" data-answer="49">7 x 7 = </div>
+            <div class="dropzone" id="dropzone8" data-answer="56">7 x 8 = </div>
+            <div class="dropzone" id="dropzone9" data-answer="63">7 x 9 = </div>
+            <div class="dropzone" id="dropzone10" data-answer="70">7 x 10 = </div>
+            <div class="dropzone" id="dropzone11" data-answer="8">8 x 1 = </div>
+            <div class="dropzone" id="dropzone12" data-answer="16">8 x 2 = </div>
+            <div class="dropzone" id="dropzone13" data-answer="24">8 x 3 = </div>
+            <div class="dropzone" id="dropzone14" data-answer="32">8 x 4 = </div>
+            <div class="dropzone" id="dropzone15" data-answer="40">8 x 5 = </div>
+            <div class="dropzone" id="dropzone16" data-answer="48">8 x 6 = </div>
+            <div class="dropzone" id="dropzone17" data-answer="56-8">8 x 7 = </div>
+            <div class="dropzone" id="dropzone18" data-answer="64">8 x 8 = </div>
+            <div class="dropzone" id="dropzone19" data-answer="72">8 x 9 = </div>
+            <div class="dropzone" id="dropzone20" data-answer="80">8 x 10 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

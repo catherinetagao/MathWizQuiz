@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc;
+}
+
+header {
+    background-color: #6699cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Input and Button Styles */
+.input-field {
+    padding: 8px;
+    border: 2px solid #6699cc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #6699cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #336699;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6699cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 2 Math Lesson: Subtraction with Regrouping and Simple Subtraction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎉 Grade 2 Math Fun 🎉</h1>
+        <h2>Subtraction Adventure!</h2>
+    </header>
+    <main>
+        <section>
+            <h3>🚀 Subtraction with Regrouping 🚀</h3>
+            <p>When we subtract numbers and the top number is smaller than the bottom number in any column, we need to regroup or borrow from the next column.</p>
+            <p>For example, 14 - 6. We need to borrow 1 from the tens place, making it 14 - 6 = 8.</p>
+            <p>Let's see some examples:</p>
+            <ul>
+                <li>14 - 6 = <input type="number" id="subRegrouping1" class="input-field"></li>
+                <li>23 - 9 = <input type="number" id="subRegrouping2" class="input-field"></li>
+                <li>32 - 17 = <input type="number" id="subRegrouping3" class="input-field"></li>
+            </ul>
+            <button onclick="checkSubRegrouping()" class="btn">Check Answers</button>
+            <p id="subRegroupingResult"></p>
+        </section>
+        <section>
+            <h3>🌟 Simple Subtraction 🌟</h3>
+            <p>Subtraction helps us find out how much is left when we take away a part of a whole.</p>
+            <p>For example, 9 - 3. We take away 3 from 9, which leaves us with 6.</p>
+            <p>Let's practice with some examples:</p>
+            <ul>
+                <li>9 - 3 = <input type="number" id="simpleSubtraction1" class="input-field"></li>
+                <li>15 - 4 = <input type="number" id="simpleSubtraction2" class="input-field"></li>
+                <li>20 - 7 = <input type="number" id="simpleSubtraction3" class="input-field"></li>
+            </ul>
+            <button onclick="checkSimpleSubtraction()" class="btn">Check Answers</button>
+            <p id="simpleSubtractionResult"></p>
+        </section>
+    </main>
+    <footer>
+        <p>🌈 Practice what you've learned with these subtraction problems. Remember to regroup or borrow when necessary! 🌈</p>
+    </footer>
+    <audio id="bg-music" autoplay loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

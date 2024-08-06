@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 2 Math Lesson: Multiplication Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .correct {
+            border-color: green;
+            color: green;
+        }
+        .incorrect {
+            border-color: red;
+            color: red;
+        }
+        .btn {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>🎉 Grade 2 Math Fun 🎉</h1>
+    <h2>Multiplication Magic!</h2>
+</header>
+<main>
+    <section>
+        <h3>🌟 What is Multiplication? 🌟</h3>
+        <p>Multiplication is a way to add the same number many times.</p>
+        <p>For example, 3 x 4 means 3 groups of 4, which equals 12.</p>
+        <p>Let's see some examples:</p>
+        <div class="example">
+            <span>3 x 4 = <input type="number" id="multExample1" class="input-field" oninput="checkMultiplication(this, 12)"></span><br>
+            <span>2 x 5 = <input type="number" id="multExample2" class="input-field" oninput="checkMultiplication(this, 10)"></span><br>
+            <span>6 x 3 = <input type="number" id="multExample3" class="input-field" oninput="checkMultiplication(this, 18)"></span><br>
+        </div>
+        <p id="multResult"></p>
+    </section>
+</main>
+<footer>
+    <p>🌈 Practice makes perfect! Keep multiplying and you'll become a math wizard! 🌈</p>
+</footer>
+<script>
+    function checkMultiplication(input, correctAnswer) {
+        const userAnswer = parseInt(input.value);
+        if (userAnswer === correctAnswer) {
+            input.classList.remove('incorrect');
+            input.classList.add('correct');
+            document.getElementById('multResult').textContent = "";
+        } else {
+            input.classList.remove('correct');
+            input.classList.add('incorrect');
+            document.getElementById('multResult').textContent = "Correct answer is: " + correctAnswer;
+        }
+    }
+</script>
+</body>
+</html>

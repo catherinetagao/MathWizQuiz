@@ -1,0 +1,64 @@
+{
+  "easyquestions":  [
+    {
+      "question": "What is 4 × 3?",
+      "answer1": "7",
+      "answer2": "12",
+      "correct": "12"
+    },
+    {
+      "question": "What is 5 × 2?",
+      "answer1": "10",
+      "answer2": "7",
+      "correct": "10"
+    },
+    {
+      "question": "What is 6 × 1?",
+      "answer1": "6",
+      "answer2": "8",
+      "correct": "6"
+    },
+    {
+      "question": "What is 7 × 2?",
+      "answer1": "14",
+      "answer2": "12",
+      "correct": "14"
+    },
+    {
+      "question": "What is 3 × 4?",
+      "answer1": "12",
+      "answer2": "9",
+      "correct": "12"
+    },
+    {
+      "question": "What is 8 × 1?",
+      "answer1": "8",
+      "answer2": "7",
+      "correct": "8"
+    },
+    {
+      "question": "What is 2 × 5?",
+      "answer1": "10",
+      "answer2": "9",
+      "correct": "10"
+    },
+    {
+      "question": "What is 9 × 1?",
+      "answer1": "9",
+      "answer2": "10",
+      "correct": "9"
+    },
+    {
+      "question": "What is 4 × 2?",
+      "answer1": "8",
+      "answer2": "6",
+      "correct": "8"
+    },
+    {
+      "question": "What is 3 × 3?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "9"
+    }
+  ]
+}

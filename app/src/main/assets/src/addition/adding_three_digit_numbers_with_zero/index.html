@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding 3-digit Numbers with Zero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Adding 3-digit Numbers with Zero</h1>
+
+        <div class="section">
+            <img src="icons/icon_addition.png" alt="Addition Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Learn how to add 3-digit numbers with zero.<br>
+            • Understand addition without regrouping.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Adding Numbers:<br>
+            <b>100 + 200</b>: 300<br>
+            <b>305 + 410</b>: 715<br>
+            <b>700 + 100</b>: 800<br>
+            <b>210 + 320</b>: 530<br>
+            <b>500 + 400</b>: 900
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="300">300</div>
+                <div class="draggable-item" draggable="true" id="715">715</div>
+                <div class="draggable-item" draggable="true" id="800">800</div>
+                <div class="draggable-item" draggable="true" id="530">530</div>
+                <div class="draggable-item" draggable="true" id="900">900</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="300">100 + 200 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="715">305 + 410 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="800">700 + 100 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="530">210 + 320 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="900">500 + 400 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

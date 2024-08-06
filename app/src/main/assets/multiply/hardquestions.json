@@ -1,0 +1,64 @@
+{
+  "hardquestions": [
+    {
+      "question": "What is 7 × 6?",
+      "answer1": "42",
+      "answer2": "36",
+      "correct": "42"
+    },
+    {
+      "question": "What is 8 × 5?",
+      "answer1": "40",
+      "answer2": "35",
+      "correct": "40"
+    },
+    {
+      "question": "What is 9 × 4?",
+      "answer1": "36",
+      "answer2": "32",
+      "correct": "36"
+    },
+    {
+      "question": "What is 6 × 7?",
+      "answer1": "42",
+      "answer2": "36",
+      "correct": "42"
+    },
+    {
+      "question": "What is 5 × 8?",
+      "answer1": "40",
+      "answer2": "45",
+      "correct": "40"
+    },
+    {
+      "question": "What is 7 × 9?",
+      "answer1": "63",
+      "answer2": "54",
+      "correct": "63"
+    },
+    {
+      "question": "What is 8 × 6?",
+      "answer1": "48",
+      "answer2": "54",
+      "correct": "48"
+    },
+    {
+      "question": "What is 4 × 9?",
+      "answer1": "36",
+      "answer2": "32",
+      "correct": "36"
+    },
+    {
+      "question": "What is 3 × 12?",
+      "answer1": "36",
+      "answer2": "30",
+      "correct": "36"
+    },
+    {
+      "question": "What is 9 × 5?",
+      "answer1": "45",
+      "answer2": "40",
+      "correct": "45"
+    }
+  ]
+}

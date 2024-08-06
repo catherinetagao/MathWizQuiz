@@ -1,0 +1,64 @@
+{
+  "easyquestions": [
+    {
+      "question": "What is 12 ÷ 4?",
+      "answer1": "3",
+      "answer2": "4",
+      "correct": "3"
+    },
+    {
+      "question": "What is 15 ÷ 3?",
+      "answer1": "5",
+      "answer2": "6",
+      "correct": "5"
+    },
+    {
+      "question": "What is 20 ÷ 5?",
+      "answer1": "4",
+      "answer2": "5",
+      "correct": "4"
+    },
+    {
+      "question": "What is 18 ÷ 2?",
+      "answer1": "9",
+      "answer2": "8",
+      "correct": "9"
+    },
+    {
+      "question": "What is 8 ÷ 2?",
+      "answer1": "4",
+      "answer2": "5",
+      "correct": "4"
+    },
+    {
+      "question": "What is 9 ÷ 3?",
+      "answer1": "3",
+      "answer2": "6",
+      "correct": "3"
+    },
+    {
+      "question": "What is 16 ÷ 4?",
+      "answer1": "4",
+      "answer2": "5",
+      "correct": "4"
+    },
+    {
+      "question": "What is 14 ÷ 2?",
+      "answer1": "7",
+      "answer2": "6",
+      "correct": "7"
+    },
+    {
+      "question": "What is 10 ÷ 5?",
+      "answer1": "2",
+      "answer2": "5",
+      "correct": "2"
+    },
+    {
+      "question": "What is 24 ÷ 6?",
+      "answer1": "4",
+      "answer2": "5",
+      "correct": "4"
+    }
+  ]
+}

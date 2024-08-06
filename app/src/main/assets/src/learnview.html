@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Math Quiz</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+        }
+
+        .category img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+<div class="container">
+    <h4>What would you like to learn today?</h4>
+
+    <a href="learn/add/index.html">
+        <div class="category">
+            <img width="94" height="94" src="images/icons8-plus-math-94.png" alt="Addition">
+            <div>Addition</div>
+        </div>
+    </a>
+
+    <a href="learn/minus/index.html">
+        <div class="category">
+            <img width="94" height="94" src="images/icons8-subtract-94.png" alt="Subtraction">
+            <div>Subtraction</div>
+        </div>
+    </a>
+
+    <a href="learn/multiplication/index.html">
+        <div class="category">
+            <img width="94" height="94" src="images/icons8-multiply-94.png" alt="Multiplication">
+            <div>Multiplication</div>
+        </div>
+    </a>
+
+    <a href="learn/division/index.html">
+        <div class="category">
+            <img width="94" height="94" src="images/icons8-percentage-94.png" alt="Division">
+            <div>Division</div>
+        </div>
+    </a>
+
+    <button class="back-button" onclick="history.back()">Back</button>
+</div>
+
+</body>
+</html>

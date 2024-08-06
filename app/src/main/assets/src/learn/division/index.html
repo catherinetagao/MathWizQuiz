@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 2 Math Lesson: Division Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .correct {
+            border-color: green;
+            color: green;
+        }
+        .incorrect {
+            border-color: red;
+            color: red;
+        }
+        .btn {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>🎉 Grade 2 Math Fun 🎉</h1>
+    <h2>Division Delight!</h2>
+</header>
+<main>
+    <section>
+        <h3>🌟 What is Division? 🌟</h3>
+        <p>Division is splitting a number into equal parts or groups.</p>
+        <p>For example, 12 ÷ 4 means splitting 12 into 4 equal parts, which equals 3.</p>
+        <p>Let's see some examples:</p>
+        <div class="example">
+            <span>12 ÷ 4 = <input type="number" id="divExample1" class="input-field" oninput="checkDivision(this, 3)"></span><br>
+            <span>15 ÷ 3 = <input type="number" id="divExample2" class="input-field" oninput="checkDivision(this, 5)"></span><br>
+            <span>18 ÷ 2 = <input type="number" id="divExample3" class="input-field" oninput="checkDivision(this, 9)"></span><br>
+        </div>
+        <p id="divResult"></p>
+    </section>
+</main>
+<footer>
+    <p>🌈 Practice makes perfect! Keep dividing and you'll become a math wizard! 🌈</p>
+</footer>
+<script>
+    function checkDivision(input, correctAnswer) {
+        const userAnswer = parseInt(input.value);
+        if (userAnswer === correctAnswer) {
+            input.classList.remove('incorrect');
+            input.classList.add('correct');
+            document.getElementById('divResult').textContent = "";
+        } else {
+            input.classList.remove('correct');
+            input.classList.add('incorrect');
+            document.getElementById('divResult').textContent = "Correct answer is: " + correctAnswer;
+        }
+    }
+</script>
+</body>
+</html>

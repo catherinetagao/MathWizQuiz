@@ -1,0 +1,64 @@
+{
+  "mediumlevelquestions": [
+    {
+      "question": "What is 27 + 36?",
+      "answer1": "62",
+      "answer2": "63",
+      "correct": "63"
+    },
+    {
+      "question": "What is 48 + 57?",
+      "answer1": "105",
+      "answer2": "106",
+      "correct": "105"
+    },
+    {
+      "question": "What is 89 + 77?",
+      "answer1": "165",
+      "answer2": "166",
+      "correct": "166"
+    },
+    {
+      "question": "What is 34 + 19?",
+      "answer1": "53",
+      "answer2": "54",
+      "correct": "53"
+    },
+    {
+      "question": "What is 56 + 88?",
+      "answer1": "143",
+      "answer2": "144",
+      "correct": "144"
+    },
+    {
+      "question": "What is 78 + 43?",
+      "answer1": "120",
+      "answer2": "121",
+      "correct": "121"
+    },
+    {
+      "question": "What is 92 + 67?",
+      "answer1": "159",
+      "answer2": "160",
+      "correct": "159"
+    },
+    {
+      "question": "What is 43 + 29?",
+      "answer1": "71",
+      "answer2": "72",
+      "correct": "72"
+    },
+    {
+      "question": "What is 61 + 35?",
+      "answer1": "95",
+      "answer2": "96",
+      "correct": "96"
+    },
+    {
+      "question": "What is 72 + 18?",
+      "answer1": "89",
+      "answer2": "90",
+      "correct": "90"
+    }
+  ]
+}

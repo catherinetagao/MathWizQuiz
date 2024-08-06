@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Mentally</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="content">
+        <h1 class="title">Adding Mentally</h1>
+
+        <div class="section">
+            <img src="icons/icon_addition.png" alt="Addition Icon" class="icon">
+            <h2 class="section-title">Objectives:</h2>
+        </div>
+        <p class="section-content">
+            • Learn how to add numbers mentally.<br>
+            • Understand mental addition strategies.
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_examples.png" alt="Examples Icon" class="icon">
+            <h2 class="section-title">Examples:</h2>
+        </div>
+        <p class="section-content">
+            1. Adding Numbers:<br>
+            <b>25 + 30</b>: 55<br>
+            <b>45 + 25</b>: 70<br>
+            <b>60 + 20</b>: 80<br>
+            <b>33 + 44</b>: 77<br>
+            <b>52 + 38</b>: 90
+        </p>
+
+        <div class="section">
+            <img src="icons/icon_practice_problems.png" alt="Practice Problems Icon" class="icon">
+            <h2 class="section-title">Practice Problems:</h2>
+        </div>
+        <div class="interactive-section">
+            <div class="drag-drop-container">
+                <div class="draggable-item" draggable="true" id="55">55</div>
+                <div class="draggable-item" draggable="true" id="70">70</div>
+                <div class="draggable-item" draggable="true" id="80">80</div>
+                <div class="draggable-item" draggable="true" id="77">77</div>
+                <div class="draggable-item" draggable="true" id="90">90</div>
+            </div>
+
+            <div class="dropzone" id="dropzone1" data-answer="55">25 + 30 = </div>
+            <div class="dropzone" id="dropzone2" data-answer="70">45 + 25 = </div>
+            <div class="dropzone" id="dropzone3" data-answer="80">60 + 20 = </div>
+            <div class="dropzone" id="dropzone4" data-answer="77">33 + 44 = </div>
+            <div class="dropzone" id="dropzone5" data-answer="90">52 + 38 = </div>
+
+            <button onclick="checkAnswers()" class="check-button">Check Answers</button>
+            <p id="result" class="result-text"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

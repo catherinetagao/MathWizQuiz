@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mathwizquiz">MathWizQuiz</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="update_details">Update Details</string>
+    <string name="name">Name</string>
+    <string name="course">Course</string>
+    <string name="email">Email</string>
+    <string name="image_url">Image URL</string>
+    <string name="update">Update</string>
+    <string name="add_student">Add Student</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="profile">Profile</string>
+    <string name="addition">Addition</string>
+    <string name="duration">Duration:</string>
+    <string name="start_game">Start Game</string>
+    <string name="question_1_100">Question- 1/100</string>
+</resources>
