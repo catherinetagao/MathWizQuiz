@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MathLearningApp"
         tools:targetApi="31">
         <activity
+            android:name=".DivisionContentActivity"
+            android:exported="false" />
+        <activity
             android:name=".MultiplicationContentActivity"
             android:exported="false" />
         <activity
@@ -45,12 +48,7 @@
         <activity
             android:name=".SubtractionBasicQuiz"
             android:exported="false" />
-        <activity
-            android:name=".MultiplicationQuizActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SubtractionQuizActivity"
-            android:exported="false" />
+
         <activity
             android:name=".HardQuiz"
             android:exported="false" />
@@ -77,12 +75,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".QuizActivity"
-            android:exported="false" />
-        <activity
-            android:name=".QuizMainActivity"
             android:exported="false" />
         <activity
             android:name=".EnterName"
@@ -112,13 +104,7 @@
             android:name=".AddLearningPage"
             android:exported="false" />
         <activity
-            android:name=".AddActivity"
-            android:exported="false" />
-        <activity
             android:name=".Viewer"
-            android:exported="false" />
-        <activity
-            android:name=".ReportPage"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"

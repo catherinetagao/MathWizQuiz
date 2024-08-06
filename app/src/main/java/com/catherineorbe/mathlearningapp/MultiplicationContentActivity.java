@@ -127,7 +127,7 @@ public class MultiplicationContentActivity extends AppCompatActivity {
 
                         // Automatically navigate back to the main activity
                         new Handler().postDelayed(() -> {
-                            Intent intent = new Intent(MultiplicationContentActivity.this, MainActivity2.class);
+                            Intent intent = new Intent(MultiplicationContentActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish(); // Close the current activity
                         }, 1000); // Delay of 1 seconds before navigating back

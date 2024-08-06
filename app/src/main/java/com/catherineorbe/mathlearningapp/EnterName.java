@@ -1,6 +1,8 @@
 package com.catherineorbe.mathlearningapp;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -21,6 +23,7 @@ public class EnterName extends AppCompatActivity {
     EditText inputText;
     MaterialCardView button;
     ImageView gifImageView;
+    DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,9 @@ public class EnterName extends AppCompatActivity {
         button = findViewById(R.id.button);
         gifImageView = findViewById(R.id.gifImageView);
 
+        // Initialize the DatabaseHelper
+        dbHelper = new DatabaseHelper(this);
+
         // Load GIF into ImageView using Glide
         Glide.with(this)
                 .asGif()
@@ -56,12 +62,26 @@ public class EnterName extends AppCompatActivity {
             String enteredName = inputText.getText().toString().trim();
 
             if (!enteredName.isEmpty()) {
+                saveNameToDatabase(enteredName);
+
                 Intent intent = new Intent(EnterName.this, MainActivity.class);
                 intent.putExtra("Name", enteredName);
                 startActivity(intent);
                 finish();
             }
         });
+    }
+
+    private void saveNameToDatabase(String name) {
+        // Get writable database
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(DatabaseHelper.COLUMN_NAME, name);
+
+        // Insert the new row, returning the primary key value of the new row
+        db.insert(DatabaseHelper.TABLE_NAME, null, values);
     }
 
     @Override
