@@ -1,0 +1,7 @@
+{
+  "name": "MathWizQuiz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
